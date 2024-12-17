@@ -14,17 +14,6 @@ import java.util.Scanner;
 public class TestExceptionReadInt {
 
 	public static void main(String[] args) {
-                Scanner in = new Scanner(System.in);
-                System.out.println("Digita un intero:");
-                
-                String line = in.next();
-                int intValue = 0;
-                try{
-                    intValue = Integer.parseInt(line);
-                }catch(NumberFormatException e){
-                    e.printStackTrace();
-                }
-                System.out.println("Valore: " + intValue);
-            }
-            
+                TestInput.testScanner();
+            }    
 	}
